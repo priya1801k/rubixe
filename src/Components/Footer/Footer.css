@@ -1,0 +1,14 @@
+.footerHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footerHead>div{
+    width: 20%;
+}
+.footerTail{
+    background-color: black;
+    color: white;
+    height: 30px;
+    font-size: 10x;
+}

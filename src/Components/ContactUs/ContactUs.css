@@ -1,0 +1,15 @@
+.sections{
+    width:40%;
+    height:350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+}
+hr{
+    color: red;
+    margin: 40px;
+}
+input{
+    width: 180%;
+}
