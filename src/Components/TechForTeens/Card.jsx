@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import './TechForTeens.css';
+
 // import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
 function Card(props) {
   const stylesHead = {
@@ -13,12 +15,6 @@ function Card(props) {
 
   const stylesTail={
     background: "linear-gradient( rgb(0,0,0,0.11),#ffffff)",
-    // backgroundColor:'rgb(0,0,0,0.09)',
-    height:'150px',
-    width: '130px',
-    color: 'green',
-    // borderTopLeftRadius:'17px',
-    // borderTopRightRadius:'17px',
     boxShadow: 'rgb(0,0,0,0.11) 0px 0px 5px',
   }
   const myVal = props.num%2;
@@ -43,13 +39,13 @@ function Card(props) {
       {myVal ? <div>
         <div style={{width:'10px',heigth:'10px',backgroundColor:'black'}}></div>
        <div style={headStyle}></div>
-       <div style={stylesHead}>
+       <div className ='card card-top'>
         <span>logo</span>
        <p style={{color:'black',textAlign:'center'}}>{props.content}</p>
        </div></div>:<div style={defaultStyle}></div>}
       
       {!myVal ? <div>
-        <div style={stylesTail}>
+        <div  className ='card card-bottom'>
         <p style={{color:'black',textAlign:'center'}}>{props.content}</p>
         <span>logo</span>
        </div>

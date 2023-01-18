@@ -3,3 +3,17 @@
     flex-direction: row;
     justify-content: center;
 }
+
+.card {
+    height:150px;
+    width: 130px;
+    color: green;
+    /* box-shadow: 1px 1px 1px 1px #ededed; */
+}
+.card-top {
+    background: linear-gradient( #ffffff, #ededed);
+}
+
+.card-bottom {
+    background: linear-gradient( #ededed ,#ffffff);
+}
