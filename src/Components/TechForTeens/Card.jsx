@@ -17,6 +17,16 @@ function Card(props) {
     borderBottomLeftRadius:'17px',
     borderBottomRightRadius:'17px',
   }
+  const styleMyIcon_top={
+    marginBottom:'10px',
+    fontSize: "60px" ,
+    color:`${props.cardColo}`
+  }
+  const styleMyIcon_bottom={
+    fontSize: "60px" ,
+    marginBottom:'10px',
+    color:`${props.cardColo}`
+  }
   const defaultStyle = {
     height:'30px',
   }
@@ -25,14 +35,14 @@ function Card(props) {
       {myVal ? <div>
        <div style={headStyle}></div>
        <div className='card card-top'>
-        <EngineeringIcon sx={{ fontSize: "60px" }} />
+       <div className='icon'><EngineeringIcon sx={styleMyIcon_top} /></div>
        <p style={{color:'black',textAlign:'center'}}>{props.content}</p>
        </div></div>:<div style={defaultStyle}></div>}
       
       {!myVal ? <div>
         <div className='card card-bottom'>
         <p style={{color:'black',textAlign:'center'}}>{props.content}</p>
-        <span>logo</span>
+        <div className='icon'><EngineeringIcon sx={styleMyIcon_bottom} /></div>
        </div>
         <div style={tailStyle}>
          </div>
