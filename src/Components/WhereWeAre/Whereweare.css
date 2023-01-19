@@ -1,0 +1,16 @@
+.howwestarted{
+    background-color: rgb(191, 47, 131);
+    display: flex;
+    justify-content: center;
+      align-items: center;
+}
+.sub_howwestarted{
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    color: #ffff;
+}
+h2{
+    margin-bottom: 6px;
+}

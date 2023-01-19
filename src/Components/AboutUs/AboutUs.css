@@ -1,6 +1,17 @@
+
 .whoweare{
-background-color: white;
+ background-color: white;
+ display:flex;
+ width: 60%;
+ margin: 40px;
+ justify-content: center;
+  align-items: center;
 }
-.howwestarted{
-background-color: rgb(191, 47, 131);
+
+.AboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+

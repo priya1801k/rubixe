@@ -1,8 +1,16 @@
 import React from 'react'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import './Footer.css';
 function Footer() {
+
+    const takeMetoFB=()=>{
+        alert("social media");
+    }
+    
   return (
-    <div >
+    <div>
+    <div className='footerBox' >
         <section className='footerHead'>
             <div>
                 <h4>ABOUT US</h4>
@@ -29,14 +37,16 @@ function Footer() {
                 <p>Email:hi@rubixe.come</p>
                 <div>
                     <h4>SOCIAL MEDIA</h4>
-                    <div>
-                        <p>facebook</p>
-                        <p>linkedin</p>
+                    <div className='social'>
+                    <div className='iconSocial'><FacebookIcon onClick={takeMetoFB}/></div>
+                    <div className='iconSocial'><LinkedInIcon onClick={takeMetoFB}/></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section className='footerTail'>&copy; Copyright 2017-2022 | Rubixe is a brand of THINK AHEAD INNOVATIONS PVT. LTD | All Rights Reserved </section>
+        </div>
+        <div className='footerTail'>&copy; Copyright 2017-2022 | Rubixe is a brand of THINK AHEAD INNOVATIONS PVT. LTD | All Rights Reserved </div>
+
     </div>
   )
 }

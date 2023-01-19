@@ -6,12 +6,14 @@ import AboutUs from './AboutUs/AboutUs';
 import TechForTeens from './TechForTeens/TechForTeens';
 import ContactUs from './ContactUs/ContactUs';
 import Footer from './Footer/Footer';
+import Whereweare from './WhereWeAre/Whereweare';
 function Home() {
   return (
     <div>
         <section><Header/></section>
         <section><Banner/></section>
         <section><AboutUs/></section>
+        <section><Whereweare/></section>
         <section><TechForTeens/></section>
         <section><ContactUs/></section>
         <section><Footer/></section>

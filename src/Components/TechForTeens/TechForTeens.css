@@ -1,5 +1,74 @@
+@media (min-width:0px) and (max-width:400px){
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card{
+    height:150px;
+    color:green;
+    }
+    
+    .card-top{
+    background: linear-gradient(#ffffff,#ededed);
+    padding :10px;
+    }
+    
+    .card-bottom{
+        background: linear-gradient(#ededed,#ffffff);
+        padding :10px;
+    }
+    
+    .techforteensBox{
+        background-color:#ededed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+    
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 7px;
+    }
+}
+@media (min-width:400px){
 .cards{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+.card{
+height:150px;
+width:130px;
+color:green;
+}
+
+.card-top{
+background: linear-gradient(#ffffff,#ededed);
+padding :10px;
+}
+
+.card-bottom{
+    background: linear-gradient(#ededed,#ffffff);
+    padding :10px;
+}
+
+.techforteensBox{
+    background-color:#ededed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7px;
+}}

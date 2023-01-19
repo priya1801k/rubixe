@@ -1,14 +1,34 @@
+
 .footerHead{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-}
-.footerHead>div{
-    width: 20%;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: 40% 15% 15% 15%;
+    justify-content: center;
 }
 .footerTail{
     background-color: black;
     color: white;
     height: 30px;
     font-size: 10x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededed;
+    padding: 40px;
+    color: grey;
+}
+.iconSocial{
+cursor: pointer;
+}
+.social{
+    display: flex;
+    flex-direction: row;
 }

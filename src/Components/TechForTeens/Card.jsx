@@ -1,26 +1,8 @@
 import React from 'react'
-// import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
+import './TechForTeens';
+import EngineeringIcon from '@mui/icons-material/Engineering';
 function Card(props) {
-  const stylesHead = {
-    height:'150px',
-    width: '130px',
-    color: 'green',
-    // borderBottomLeftRadius:'17px',
-    // borderBottomRightRadius:'17px',
-    boxShadow: '10px 0px 0px rgb(0,0,0,0.11)',
-    background: "linear-gradient(#ffffff, rgb(0,0,0,0.11))",
-  };
 
-  const stylesTail={
-    background: "linear-gradient( rgb(0,0,0,0.11),#ffffff)",
-    // backgroundColor:'rgb(0,0,0,0.09)',
-    height:'150px',
-    width: '130px',
-    color: 'green',
-    // borderTopLeftRadius:'17px',
-    // borderTopRightRadius:'17px',
-    boxShadow: 'rgb(0,0,0,0.11) 0px 0px 5px',
-  }
   const myVal = props.num%2;
 
   const headStyle={
@@ -41,15 +23,14 @@ function Card(props) {
   return (
     <div>
       {myVal ? <div>
-        <div style={{width:'10px',heigth:'10px',backgroundColor:'black'}}></div>
        <div style={headStyle}></div>
-       <div style={stylesHead}>
-        <span>logo</span>
+       <div className='card card-top'>
+        <EngineeringIcon sx={{ fontSize: "60px" }} />
        <p style={{color:'black',textAlign:'center'}}>{props.content}</p>
        </div></div>:<div style={defaultStyle}></div>}
       
       {!myVal ? <div>
-        <div style={stylesTail}>
+        <div className='card card-bottom'>
         <p style={{color:'black',textAlign:'center'}}>{props.content}</p>
         <span>logo</span>
        </div>
